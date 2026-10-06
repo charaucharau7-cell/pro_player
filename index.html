@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Page</title>
+
+    <!-- Improved styling for readability and responsiveness -->
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin-top: 50px;
+            margin: 40px auto;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
         }
     </style>
 </head>
+
 <body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is a small, clean HTML code example.</p>         
+    <main>
+        <p>This is an updated, clean, and responsive HTML example.</p>
 
-<img src="{{ url_for('static', filename='image/image.png') }}" alt="Sample Image">
+        <!-- Flask static image reference preserved -->
+        <img src="{{ url_for('static', filename='image/image.png') }}" 
+             alt="Sample Image showing website content">
+    </main>
 </body>
 </html>
